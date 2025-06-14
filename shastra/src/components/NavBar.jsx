@@ -1,39 +1,50 @@
-import React from 'react'
-import {Link} from 'react-router-dom'
-import {BiLogoReact} from 'react-icons/bi'
+import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
+import logo from '../assets/logo.png';
+import { HiMenu, HiX } from 'react-icons/hi';
+
 const NavBar = () => {
+  const [isOpen, setIsOpen] = useState(false);
+
   return (
-    <nav className='bg-slate-800 shadow-lg flex items-center justify-between py-3 px-32 fixed top-0 left-0 w-full'>
-      <Link to="/">
-        <span className='font-semibold text-lg flex-items-center gap-3 text-blue-400'>
-          <BiLogoReact className='text-6xl'/>
-          <span className='font-semibold text-2xl'>React Router</span>
-        </span>
-      </Link>
+    <nav className=" shadow-lg fixed top-0 left-0 w-full z-50">
+      <div className="flex items-center justify-between px-6 py-4 md:px-32">
+        
+        <Link to="/" className="flex items-center gap-3">
+          <img src={logo} alt="Logo" className="h-20 w-25" />
+        </Link>
 
-      <div className='flex items-center gap-5 text-black'>
-        <Link to="/" className='py-1 px-3 text-lg font-light text-white hover:text-sky-300 rounded-2xl hover:bg-slate-700 transition duration-300'>
-        Home
-      </Link>
+      
+        <div className="hidden md:flex items-center gap-6 text-white">
+          <NavLinks />
+        </div>
 
-       <Link to="/events" className='py-1 px-3 text-lg font-light text-white hover:text-sky-300 rounded-2xl hover:bg-slate-700 transition duration-300'>
-        Events
-      </Link>
-
-      <Link to="/competitions" className='py-1 px-3 text-lg font-light text-white hover:text-sky-300 rounded-2xl hover:bg-slate-700 transition duration-300'>
-        Competitions
-      </Link>
-
-      <Link to="/schedule" className='py-1 px-3 text-lg font-light text-white hover:text-sky-300 rounded-2xl hover:bg-slate-700 transition duration-300'>
-        Schedule
-      </Link>
-
-      <Link to="/contact" className='py-1 px-3 text-lg font-light text-white hover:text-sky-300 rounded-2xl hover:bg-slate-700 transition duration-300'>
-        Contact
-      </Link>
+        {/* Mobile Hamburger */}
+        <div className="md:hidden text-white z-50">
+          <button onClick={() => setIsOpen(!isOpen)}>
+            {isOpen ? <HiX className="text-3xl" /> : <HiMenu className="text-3xl" />}
+          </button>
+        </div>
       </div>
+
+      {/* Mobile Menu */}
+      {isOpen && (
+        <div className="fixed top-0 left-0 right-0 md:hidden flex flex-col items-center bg-navbar text-white gap-4 pb-4">
+          <NavLinks />
+        </div>
+      )}
     </nav>
   );
 };
+
+const NavLinks = () => (
+  <>
+    <Link to="/" className="hover:text-sky-300">Home</Link>
+    <Link to="/events" className="hover:text-sky-300">Events</Link>
+    <Link to="/competitions" className="hover:text-sky-300">Competitions</Link>
+    <Link to="/schedule" className="hover:text-sky-300">Schedule</Link>
+    <Link to="/contact" className="hover:text-sky-300">Contact</Link>
+  </>
+);
 
 export default NavBar;
