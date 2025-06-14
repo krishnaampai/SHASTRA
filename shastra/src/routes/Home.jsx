@@ -5,6 +5,9 @@ import img01 from '../assets/carousel/img01.jpeg';
 import img02 from '../assets/carousel/img02.jpeg';
 import img03 from '../assets/carousel/img03.jpeg';
 import ScrollView from '../components/ScrollView.jsx';
+import logo from '../assets/logo.png';
+import { FaInstagram,FaFacebookSquare,FaLinkedin } from "react-icons/fa";
+import { FaSquareXTwitter } from "react-icons/fa6";
 
 const slides = [img01, img02, img03];
 
@@ -61,7 +64,32 @@ const Home = () => {
           </div>
         </div>
       </div>
+  
+    <div className='mx-auto  px-4 py-12 max-w-3xl'>
+      <h3 className='text-white text-2xl md:text-3xl font-bold text-center mb-4 md:mb-6'>PARTNERS</h3>
+      <div className='grid md:grid-cols-2 grid-cols-1 gap-4 justify-items-center'>
+        <div className='text-white flex text-center w-3xl p-4  bg-white bg-opacity-10 backdrop-blur-lg rounded-md'>Partner 1</div>
+        <div className='text-white flex text-center w-2xl p-4  bg-white bg-opacity-10 backdrop-blur-lg rounded-md'>Partner 2</div>
+        <div className='text-white flex text-center w-2xl p-4  bg-white bg-opacity-10 backdrop-blur-lg rounded-md'>Partner 3</div>
+        <div className='text-white flex text-center w-2xl p-4  bg-white bg-opacity-10 backdrop-blur-lg rounded-md'>Partner 4</div>
+      </div>
+      
     </div>
+     <footer>
+        <div className='grid grid-cols-2 md:grid-cols-3 gap-4  mt-48 justify-center px-10 mb-10 '>
+          <div><img src={logo} alt="Logo" className="h-18 w-20" /></div>
+           <div className='grid grid-cols-4 text-white font-2xl text-xl'>
+            <FaInstagram /><FaFacebookSquare /><FaLinkedin /><FaSquareXTwitter />
+           </div>
+            <div>moddel negineering college</div>
+
+        </div>
+      </footer>
+
+
+    </div>
+
+
   )
 }
 

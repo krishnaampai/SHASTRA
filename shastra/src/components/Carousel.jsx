@@ -34,7 +34,7 @@ const Carousel = ({ children }) => {
         ))}
       </div>
       
-      {/* Navigation dots */}
+     
       <div className="absolute bottom-4 left-0 right-0 flex justify-center gap-2">
         {Array.from({ length }).map((_, index) => (
           <button
