@@ -74,18 +74,30 @@ const Home = () => {
         </div>
       </div>
 
-      <div className='mx-auto px-4 py-12 max-w-3xl'>
-        <ScrollView>
-        <h3 className='text-white text-2xl md:text-3xl font-bold text-center mb-4 md:mb-6'>PARTNERS</h3>
-        <div className='grid md:grid-cols-2 grid-cols-1 gap-6 justify-items-center'>
-          <div className='text-white flex text-center w-[220px] h-[180px] items-center justify-center p-6 bg-white bg-opacity-10 backdrop-blur-lg rounded-md text-lg'>Partner 1</div>
-          <div className='text-white flex text-center w-[220px] h-[180px] items-center justify-center p-6 bg-white bg-opacity-10 backdrop-blur-lg rounded-md text-lg'>Partner 2</div>
-          <div className='text-white flex text-center w-[220px] h-[180px] items-center justify-center p-6 bg-white bg-opacity-10 backdrop-blur-lg rounded-md text-lg'>Partner 3</div>
-          <div className='text-white flex text-center w-[220px] h-[180px] items-center justify-center p-6 bg-white bg-opacity-10 backdrop-blur-lg rounded-md text-lg'>Partner 4</div>
-        </div>
-        </ScrollView>
+      <div className="mx-auto px-4 py-12 max-w-3xl">
+  <ScrollView>
+    <h3 className="text-white text-2xl md:text-3xl font-bold text-center mb-4 md:mb-6">PARTNERS</h3></ScrollView>
+
+    <div className="grid grid-cols-1 md:grid-cols-2 gap-6 justify-items-center">
+      <div className="text-white flex text-center w-full max-w-[220px] h-[180px] items-center justify-center p-6 bg-white bg-opacity-10 backdrop-blur-lg rounded-md text-lg">
+        Partner 1
       </div>
-      <p className='text-white text-2xl md:text-3xl font-bold text-center mb-4 md:mb-6 mt-20'>Appo namukku polikande🔥</p>
+      <div className="text-white flex text-center w-full max-w-[220px] h-[180px] items-center justify-center p-6 bg-white bg-opacity-10 backdrop-blur-lg rounded-md text-lg">
+        Partner 2
+      </div>
+      <div className="text-white flex text-center w-full max-w-[220px] h-[180px] items-center justify-center p-6 bg-white bg-opacity-10 backdrop-blur-lg rounded-md text-lg">
+        Partner 3
+      </div>
+      <div className="text-white flex text-center w-full max-w-[220px] h-[180px] items-center justify-center p-6 bg-white bg-opacity-10 backdrop-blur-lg rounded-md text-lg">
+        Partner 4
+      </div>
+    </div>
+</div>
+
+     <p className="text-white text-2xl md:text-3xl font-bold text-center mb-4 md:mb-6 mt-32 px-4 pb-10">
+  Appo namukku polikande🔥
+</p>
+
 
       <footer>
         <div className='grid grid-cols-2 md:grid-cols-3 gap-4 mt-48 justify-center px-10 mb-10 '>
