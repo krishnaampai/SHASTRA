@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
-import logo from '../assets/logo.png';
+import logo from '../assets/shastra-logo.png';
 import { HiMenu, HiX } from 'react-icons/hi';
 
 
@@ -12,7 +12,7 @@ const NavBar = () => {
       <div className="flex items-center justify-between px-6 py-4 md:px-32">
         
         <Link to="/" className="flex items-center gap-3">
-          <img src={logo} alt="Logo" className="h-20 w-25" />
+          <img src={logo} alt="Logo" className="h-10 w-auto object-contain" />
         </Link>
 
       

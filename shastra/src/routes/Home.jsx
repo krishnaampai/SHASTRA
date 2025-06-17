@@ -87,10 +87,10 @@ const Home = () => {
       <footer>
         <div className='grid grid-cols-2 md:grid-cols-3 gap-4 mt-48 justify-center px-10 mb-10 '>
           <div><img src={logo} alt="Logo" className="h-18 w-20" /></div>
-          <div className='grid grid-cols-4 text-white font-2xl text-xl'>
+          <div className='grid grid-cols-4 text-white font-2xl text-xl p-6'>
             <FaInstagram /><FaFacebookSquare /><FaLinkedin /><FaSquareXTwitter />
           </div>
-          <div > <p className='pl-20'>College</p></div>
+          <div > <p className='pl-20 text-center md:text-right text-sm text-white p-6'>College</p></div>
         </div>
       </footer>
     </div>
