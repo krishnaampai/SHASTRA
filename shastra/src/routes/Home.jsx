@@ -30,7 +30,7 @@ const Home = () => {
           </p>
         </div>
 
-        <div className="absolute top-[70%] left-0 right-0 flex justify-center z-10 opacity-30">
+        <div className="absolute top-[70%] left-0 right-0 flex justify-center z-10 opacity-30 hidden md:block">
           <div className="w-full max-w-screen-xl sm:h-[200px] md:h-[300px]">
             <Lottie animationData={anim2} loop autoplay />
           </div>
