@@ -5,7 +5,7 @@ import img01 from '../assets/carousel/img01.jpeg';
 import img02 from '../assets/carousel/img02.jpeg';
 import img03 from '../assets/carousel/img03.jpeg';
 import ScrollView from '../components/ScrollView.jsx';
-import logo from '../assets/logo.png';
+import logo from '../assets/shastra-logo.png';
 import { FaInstagram, FaFacebookSquare, FaLinkedin } from "react-icons/fa";
 import { FaSquareXTwitter } from "react-icons/fa6";
 import Lottie from 'lottie-react';
